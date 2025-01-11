@@ -52,7 +52,7 @@ include "koneksi.php";
     <section id="hero" class="text-center p-5  bg-primary-subtle text-sm-start ">
         <div class="container">
             <div class="d-sm-flex flex-sm-row-reverse align-items-center">
-                <img src="img/banner.jpg" class="img-fluid" width="300" alt="Arema">
+                <img src="img/Arema.jpg" class="img-fluid" width="300" alt="Arema">
                 <div>
                     <h1 class="fw-bold display-4">
                         Masa Kejayaan Arema: Sejarah dan Prestasi Klub Singo Edan
