@@ -8,7 +8,7 @@ include "koneksi.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Masa Kejayaan Arema</title>
-    <link rel="icon" href="./img/logo.png">
+    <link rel="icon" href="img/Arema.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
@@ -103,7 +103,7 @@ include "koneksi.php";
     <!--article end  -->
     <!--gallery begin -->
             <!-- Gallery -->
-            <section id="article" class="text-center p-5">
+            <section id="gallery" class="text-center p-5">
   <div class="container">
     <h1 class="fw-bold display-4 pb-3">Galeri</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
