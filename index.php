@@ -232,7 +232,7 @@ include "koneksi.php";
         <div class="d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
           <div class="text-center mb-3 mb-md-0"id="logo">
             <div>
-            <img src="img/20250111065330.jpg" class="rounded-circle img-fluid w-75 w-md-50" alt="Image">
+            <img src="img/foto1.jpg" class="rounded-circle img-fluid w-75 w-md-50" alt="Image">
             </div>
          </div>
           <div class="text-md-left" id="lev">
