@@ -102,37 +102,37 @@ include "koneksi.php";
 </section>
     <!--article end  -->
     <!--gallery begin -->
-    <section id="gallery" class="text-center p-5  bg-primary-subtle">
-        <div class="container">
-            <h1 class="fw-bold display-4 pb-3">Gallery</h1>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/piala presiden 2017.jpg" class="d-block w-100" alt="Arema">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/Arema.jpeg" class="d-block w-100" alt="Arema">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/juara 2010.jpeg" class="d-block w-100" alt="Juara">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/skuad.jpeg" class="d-block w-100" alt="menyerang">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/piala presiden 2024.jpeg" class="d-block w-100" alt="penguasa">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            <!-- Gallery -->
+            <section id="article" class="text-center p-5">
+  <div class="container">
+    <h1 class="fw-bold display-4 pb-3">Galeri</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <?php
+      $sql = "SELECT * FROM galeri ORDER BY tanggal DESC";
+      $hasil = $conn->query($sql); 
+
+      while($row = $hasil->fetch_assoc()){
+      ?>
+             <div class="col">
+          <div class="card h-100">
+            <img src="img/<?= $row["gambar"]?>" class="card-img-top" alt="..." />
+            <div class="card-body"> 
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">
+                <?= $row["tanggal"]?>
+              </small>
+            </div>
+          </div>
         </div>
+        <?php
+      }
+      ?> 
+         
+                  </div>
+            </div>
+        </section>
+        <!--  -->
     </section>
     <!--gallery end  -->
     <!-- Schedule begin -->
@@ -232,7 +232,7 @@ include "koneksi.php";
         <div class="d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
           <div class="text-center mb-3 mb-md-0"id="logo">
             <div>
-            <img src="https://cdn.idntimes.com/content-images/post/20211129/en-40978b818a5cf4be095787607c7e8b53.jpg" class="rounded-circle img-fluid w-75 w-md-50" alt="Image">
+            <img src="img/20250111065330.jpg" class="rounded-circle img-fluid w-75 w-md-50" alt="Image">
             </div>
          </div>
           <div class="text-md-left" id="lev">

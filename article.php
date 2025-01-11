@@ -5,9 +5,7 @@
       </button>
     <div class="row">
         <div class="table-responsive" id="article_data">
-
         </div>
-
         <!-- Awal Modal Tambah-->
 <div class="modal fade" id="modalTambah" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
